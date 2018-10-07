@@ -18,14 +18,14 @@
 #include <iostream>
 #include <string>
 using namespace std;
+extern pthread_mutex_t sold_seats_mutex;
 class seat{
 public:
     int i;
     int j;
     static int soldSeats;
-    pthread_mutex_t sold_seats_mutex;
     bool sold;                                      // status of a seat
-    int sold_by;                              // seller who sold the seat
+    string sold_by;                              // seller who sold the seat
     seat();
     void sell_me(string);
     void setIJ(int i, int j);

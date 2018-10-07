@@ -20,23 +20,36 @@
 #include <algorithm>
 #include <iomanip>
 #include <iostream>
+#include "unistd.h"
 using namespace std;
 
 extern bool done_working_for_this_minute[10];
+extern bool done_working_for_good[10];
+extern bool done;
 extern seat seat_chart[10][10];  //EXTERN MAKES IT VISIBLE TO EVERYTHING BASICALLY 
 
 extern seat* hSP;
 extern pthread_mutex_t hSPMutex;
+extern pthread_mutex_t* h_mutex_ptr;
+
+extern int distance_between_high_and_mid;
+extern pthread_mutex_t dbhm_mutex;
 
 extern seat* mSPD;
 extern seat* mSPU;
 extern seat** mSP;
 extern pthread_mutex_t mSPMutex;
+extern pthread_mutex_t* m_mutex_ptr;
 extern bool is_mid_up;
+extern bool is_toggling;
 extern int toggle_counter;
+
+extern int distance_between_mid_and_low;
+extern pthread_mutex_t dbml_mutex;
 
 extern seat* lSP;
 extern pthread_mutex_t lSPMutex;
+extern pthread_mutex_t* l_mutex_ptr;
 
 #define  H_SELLER       1
 #define  M_SELLER       2
@@ -46,26 +59,43 @@ extern pthread_mutex_t lSPMutex;
 class customer{
 public:
     int aT;                                         // arrival time of a customer
-    
+    int serving_time;
     void set_aT(int aT){
         this->aT =aT;
     }
 };
 
 class seller {
-    
+
 public:
+        enum SELLER_STATE{
+        SERVING,
+        WAITING,
+        FINISHED
+    };
+    bool done_for_good = false;
     string seller_name;
+    int seats_sold_counter=0;
     int pID;
     int seed = time(NULL);
     int s_type;
+    seat* current_seat = nullptr;
     seller(int s_type,string seller_name,int pID);
     queue<customer> cQ;    
     int fRanInt(int,int);
     int gen_aT();
+    int gen_serving_time();
     void fill_cQ(int N);
     bool are_all_sellers_done();
-    virtual void* sell_tickets(void* arg) = 0;
+    bool are_all_sellers_done_for_good();
+    void sell_tickets();
+    string create_ID_for_seat();
+    SELLER_STATE seller_state;
+    int remaining_serving_time;
+    int current_minute = 0;
+    virtual int serve(customer c)=0;
+    
+    
     
     
     
@@ -77,7 +107,8 @@ class high_seller : public seller {
 public:
     int s_type;
     high_seller(string seller_name, int pID);
-    void* sell_tickets  (void* arg) override;
+    void sell_tickets  ();
+    int serve(customer c);
     
 private:
 
@@ -90,7 +121,8 @@ public:
     int s_type;
     mid_seller(string seller_name,int pID);
     void toggle_mid_pointer();
-    void* sell_tickets(void* arg);
+    void sell_tickets();
+    int serve(customer c) override;
     
 private:
 
@@ -101,7 +133,8 @@ public:
 
     int s_type;
     low_seller(string seller_name,int pID);
-    void* sell_tickets(void* arg) override;
+    void sell_tickets() ;
+    int serve(customer c);
     
 private:
 
