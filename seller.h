@@ -22,15 +22,21 @@
 #include <iostream>
 #include "unistd.h"
 using namespace std;
-
+extern pthread_mutex_t mutex;
+extern pthread_mutex_t* mutex_p;
 extern bool done_working_for_this_minute[10];
 extern bool done_working_for_good[10];
+extern bool ready_to_start[10];
 extern bool done;
 extern seat seat_chart[10][10];  //EXTERN MAKES IT VISIBLE TO EVERYTHING BASICALLY 
 
 extern seat* hSP;
+extern seat** hSPP;
 extern pthread_mutex_t hSPMutex;
 extern pthread_mutex_t* h_mutex_ptr;
+extern bool first_time_hm;
+extern bool first_time_ml;
+extern bool seats_full;
 
 extern int distance_between_high_and_mid;
 extern pthread_mutex_t dbhm_mutex;
@@ -48,6 +54,7 @@ extern int distance_between_mid_and_low;
 extern pthread_mutex_t dbml_mutex;
 
 extern seat* lSP;
+extern seat** lSPP;
 extern pthread_mutex_t lSPMutex;
 extern pthread_mutex_t* l_mutex_ptr;
 
@@ -58,6 +65,7 @@ extern pthread_mutex_t* l_mutex_ptr;
 
 class customer{
 public:
+    string name;
     int aT;                                         // arrival time of a customer
     int serving_time;
     void set_aT(int aT){
@@ -93,6 +101,8 @@ public:
     SELLER_STATE seller_state;
     int remaining_serving_time;
     int current_minute = 0;
+    string event_log[70];
+    void print_ptrs();
     virtual int serve(customer c)=0;
     
     

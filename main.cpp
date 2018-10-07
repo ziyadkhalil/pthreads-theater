@@ -21,7 +21,23 @@ void print_seats(){
         cout << endl;
     }
 }
-
+bool are_all_sellers_ready_to_start(){
+    if((ready_to_start[0]||done_working_for_good[0])&&
+            (ready_to_start[1]||done_working_for_good[1])&&
+            (ready_to_start[2]||done_working_for_good[2])&&
+            (ready_to_start[3]||done_working_for_good[3])&&
+            (ready_to_start[4]||done_working_for_good[4])&&
+            (ready_to_start[5]||done_working_for_good[5])&&
+            (ready_to_start[6]||done_working_for_good[6])&&
+            (ready_to_start[7]||done_working_for_good[7])&&
+            (ready_to_start[8]||done_working_for_good[8])&&
+            (ready_to_start[9]||done_working_for_good[9])){
+        for(int i = 0 ; i < 10 ; i ++)
+            ready_to_start[i]=0;
+        return true;
+    }
+    return false;
+}
 int main() {
 //    init_mutexes();
     
@@ -34,45 +50,66 @@ int main() {
     pthread_attr_init(&attr);
     pthread_attr_setdetachstate(&attr,PTHREAD_CREATE_JOINABLE);
     for(int i = 0 ; i < 10 ; i++){
-        if(i<7){
-        string name = "M"+to_string(i);
-        sellers[i] = new mid_seller(name,i);
-                sellers[i]->fill_cQ(12);
+        if(i<1){
+        string name = "H"+to_string(i+1);
+        sellers[i] = new high_seller(name,i);
+                sellers[i]->fill_cQ(20);
         }
-        else if(i<10){
-            string name = "H"+to_string(i);
-            sellers[i]=new high_seller(name,i);
-            sellers[i]->fill_cQ(5);
+        else if (i<4){
+            string name = "M"+to_string(i);
+            sellers[i] = new mid_seller(name,i);
+            sellers[i]->fill_cQ(10);
+        }
+        else {
+            string name = "L"+to_string(i-3);
+            sellers[i]=new low_seller(name,i);
+            sellers[i]->fill_cQ(10);
             
         }
        
         pthread_create(&threads[i],&attr,start_selling,sellers[i]);
     }
-    
-//    string name  = "M1";
-//    seller* s = new mid_seller(name,0);
-//    s->fill_cQ(100);
-//    for(int i  = 0 ; i<s->cQ.size();i++){
-//        customer c = s->cQ.front();
-//        s->cQ.pop();
-//        s->cQ.
-//        cout << "Customer " << i << ": \nArrival Time: " << c.aT << "\n Serving Time: " << c.serving_time << endl;        
-//    }
-//    pthread_create(&thread,&attr,start_selling,s);
+    int not_ready_cnt=0;
     sleep(2);
-    cout<<"Minute: 0\n";
     bool has_work=true;
     while(has_work){
-    pthread_mutex_lock(&time_mutex);
-//    sleep(1);
-    pthread_cond_broadcast(&start_cond); //ALL START
-    pthread_cond_wait(&time_cond,&time_mutex);  // WAITING 
-    if(done)
-        has_work = false;
-//    sleep(1);
-    cout<<"Minute: " + to_string(time_counter)<<endl;
-    time_counter++;
-    pthread_mutex_unlock(&time_mutex);
+        while(true){
+            if(pthread_mutex_trylock(&start_mutex)!=0){
+                sleep(1);
+                cout<<"not ready\n";
+                not_ready_cnt++;
+            }
+            else if (are_all_sellers_ready_to_start()){
+                cout<<"ready\n";
+                pthread_cond_broadcast(&start_cond);
+                pthread_mutex_unlock(&start_mutex);
+                break;
+            }
+            else{
+                not_ready_cnt++;
+                cout<<"not reeadyyy\n";
+                pthread_mutex_unlock(&start_mutex);
+                sleep(1);
+            }
+        }
+        pthread_mutex_lock(&time_mutex);
+        pthread_cond_wait(&time_cond,&time_mutex);  // WAITING 
+        
+        string current_time_string = to_string(time_counter);
+        if(time_counter-1<10)
+            current_time_string="0"+current_time_string;
+        cout<<"00:"<<current_time_string<<endl;
+        for(int i=0 ; i<10 ;i++){
+            cout<<(sellers[i]->seller_name)<<": "<<sellers[i]->event_log[time_counter]<<endl;
+            
+        }
+                cout<<endl;
+                time_counter++;
+         if(done)
+             has_work = false;        
+      pthread_mutex_unlock(&time_mutex);
+//        sleep(1);
+       
     }
 //    pthread_join(thread,NULL);
     for(int i = 0 ; i <10 ; i++){
@@ -80,5 +117,6 @@ int main() {
     }
         cout<<"SEATS SOLD: "<<seat::soldSeats<<endl;
  print_seats();  
+ cout<<not_ready_cnt<<endl;
 }
 
