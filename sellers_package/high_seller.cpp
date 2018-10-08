@@ -19,28 +19,9 @@
            pthread_mutex_unlock(mutex_p);
            return 555;
        }
-//        if((*lSPP==mSPD&&first_time_ml)||(*hSPP==mSPU&&first_time_hm)){
-//        if(*lSPP==mSPD&&first_time_ml){
-//           cout<<"Meeting done in low seller\n";
-//
-//           first_time_ml=false;
-//           lSPP=&mSPU;
-//           mSP=&mSPU;
-//           is_toggling=false;
-//           is_mid_up=true;
-//           
-//       }  if(*hSPP==mSPU&&first_time_hm){
-//             cout<<"Meeting HM done in Mid Seller\n";
-//             first_time_hm=false;
-//           hSPP=&mSPD;
-//           mSP=&mSPD;
-//           is_toggling=false;
-//           is_mid_up=false;
-//       }
-//        }
-        
         
         if(*hSPP==mSPU&&first_time_hm){
+          
              first_time_hm=false;
            hSPP=&mSPD;
            mSP=&mSPD;

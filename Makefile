@@ -57,8 +57,8 @@ build: .build-post
 # Add your pre 'build' code here...
 
 .build-post: .build-impl
-# Add your post 'build' code here...
-
+	mv ./dist/Debug/GNU-Linux/pthreads-theater pthreads_theater
+	
 
 # clean
 clean: .clean-post
