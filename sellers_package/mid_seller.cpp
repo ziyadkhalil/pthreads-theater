@@ -23,8 +23,6 @@ mid_seller::mid_seller(string seller_name,int pID):seller(M_SELLER,seller_name,p
 int mid_seller::serve(customer c)  {
          pthread_mutex_lock(mutex_p);   //LOCK POINTER SO NO ANOTHER MID SELLER CAN INCREMENT IT OR DEREFERNCE A WRONG SEAT! 
          seat* s=*mSP;  
-                 if(s->sold)
-            print_ptrs();
          if(seats_full){
                 this->seller_state=FINISHED;
                 this->done_for_good=true;
@@ -32,34 +30,65 @@ int mid_seller::serve(customer c)  {
                 return 555;
        }
    
-        if((*lSPP==mSPD&&first_time_ml)||(*hSPP==mSPU&&first_time_hm)){
-        if(*lSPP==mSPD&&first_time_ml){
-           cout<<"Meeting done in low seller\n";
-
-           first_time_ml=false;
-           lSPP=&mSPU;
-           mSP=&mSPU;
-           is_toggling=false;
-           is_mid_up=true;
-           
-       }  if(*hSPP==mSPU&&first_time_hm){
-             cout<<"Meeting HM done in Mid Seller\n";
-             first_time_hm=false;
-           hSPP=&mSPD;
-           mSP=&mSPD;
-           is_toggling=false;
-           is_mid_up=false;
-       }
-        }
-         else {
-            if(is_mid_up)
-                (*mSP)--;
-            else
-                (*mSP)++;
-       }
+//        if((*lSPP==mSPD&&first_time_ml)||(*hSPP==mSPU&&first_time_hm)){
+//        if(*lSPP==mSPD&&first_time_ml){
+//           cout<<"Meeting done in low seller\n";
+//
+//           first_time_ml=false;
+//           lSPP=&mSPU;
+//           mSP=&mSPU;
+//           is_toggling=false;
+//           is_mid_up=true;
+//           
+//       }  if(*hSPP==mSPU&&first_time_hm){
+//             cout<<"Meeting HM done in Mid Seller\n";
+//             first_time_hm=false;
+//           hSPP=&mSPD;
+//           mSP=&mSPD;
+//           is_toggling=false;
+//           is_mid_up=false;
+//       }
+//        }
+         if(is_mid_up){
+             if(mSPU==*hSPP&&first_time_hm){
+                 
+                 first_time_hm = false;
+                 hSPP=&mSPD;
+                 mSP=&mSPD;
+                 if(mSPD->sold){
+                     cout<<"jesus christ\n";
+                     seats_full=true;
+                 }
+                 is_toggling=false;
+                 is_mid_up=false;
+             }
+             else if (*lSPP==*hSPP)
+                 seats_full=true;
+             else
+                 (*mSP)--;
+         }else {
+             if(*lSPP==mSPD&&first_time_ml){
+                 first_time_ml=false;
+                 lSPP=&mSPU;
+                 mSP=&mSPU;
+                 if(mSPD->sold){
+                     cout<<"christ jesus\n";
+                    seats_full=true;
+                 }
+                 is_toggling=false;
+                 is_mid_up=true;
+             }
+             else if(*lSPP==*hSPP)
+                 seats_full=true;
+             else
+                 (*mSP)++;
+             
+         }
+      
          if((!first_time_hm)&&(!first_time_ml)){
              seats_full=true;
              print_ptrs();
+             
              cout<<"jeeeeez\n";
              } 
         toggle_counter++;
@@ -74,7 +103,9 @@ int mid_seller::serve(customer c)  {
             this->remaining_serving_time= c.serving_time;
        }
        else{
+           
            cout<<"WE FUCKED UP\n";
+           exit(0);
        }
                pthread_mutex_unlock(mutex_p);
                return 0;
