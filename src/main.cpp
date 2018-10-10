@@ -7,7 +7,8 @@ int seat::soldSeats = 0 ;
 seller* sellers[10];
 void* start_selling(void* arg){
     seller* s = (seller*)arg;
-    sleep(s->pID);
+    if(MIN_BY_MIN_SIMULATION)
+        sleep(s->pID);
     cout <<s->seller_name<<" Starting. (Thread"<<to_string(s->pID)<<")"<<endl;
     s->sell_tickets();
     pthread_exit(nullptr);
@@ -136,6 +137,9 @@ int main(int argc,char** argv) {
     }
 //    pthread_join(thread,NULL);
     for(int i = 0 ; i <10 ; i++){
+        cout <<sellers[i]->seller_name<<" Exiting. (Thread"<<to_string(sellers[i]->pID)<<")"<<endl;
+        if(MIN_BY_MIN_SIMULATION)
+            sleep(1);
         pthread_join(threads[i],NULL);
     }
 
