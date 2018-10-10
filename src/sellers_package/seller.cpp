@@ -56,7 +56,7 @@ void seller::fill_cQ(int N){
             this->cArr[i].serving_time=gen_serving_time();
         }
         
-        sort(tmp, tmp+N,
+        sort(this->cArr, this->cArr+N,
              [](customer const & p1, customer const & p2) -> bool
              { return p1.aT < p2.aT; } );
         
