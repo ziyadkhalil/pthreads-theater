@@ -48,12 +48,12 @@ int seller::gen_serving_time(){
 
 void seller::fill_cQ(int N){
       srand(this->pID);
-      customer tmp[N];
+      
         
         for (int i = 0; i<N; i++){
-            tmp[i] = customer();
-            tmp[i].set_aT(gen_aT());
-            tmp[i].serving_time=gen_serving_time();
+            this->cArr[i] = customer();
+            this->cArr[i].set_aT(gen_aT());
+            this->cArr[i].serving_time=gen_serving_time();
         }
         
         sort(tmp, tmp+N,
@@ -64,10 +64,10 @@ void seller::fill_cQ(int N){
             string num  = to_string(i+1);
             if(i+1<10)
                 num="0"+num;
-            tmp[i].name = this->seller_name+num;
-            cQ.push(tmp[i]);
+            this->cArr[i].name = this->seller_name+num;
+            cQ.push(this->cArr[i]);
         }
-        this->cArr = tmp;
+
     }
 
 bool seller::are_all_sellers_done(){

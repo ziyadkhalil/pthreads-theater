@@ -83,6 +83,7 @@ public:
     seller(int s_type,string seller_name,int pID);
     queue<customer> cQ;
     customer* cArr = nullptr;
+    cArr = new customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
     int fRanInt(int,int);
     int gen_aT();
     int gen_serving_time();
