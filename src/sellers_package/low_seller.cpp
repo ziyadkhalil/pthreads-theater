@@ -2,7 +2,7 @@
 seat* lSP = &seat_chart[9][9];
 seat** lSPP = &lSP;
 bool first_time_ml = true;
-int xx = 0;
+int low_customers_served_counter = 0;
 pthread_mutex_t lSPMutex;
 pthread_mutex_t* l_mutex_ptr = &lSPMutex;
 low_seller::low_seller(string seller_name,int pID):seller(L_SELLER,seller_name,pID){}
@@ -45,7 +45,6 @@ low_seller::low_seller(string seller_name,int pID):seller(L_SELLER,seller_name,p
            mSP=&mSPU;
            if(mSPU->sold){
                seats_full=true;
-               cout<<"christ\n";
             }
            is_toggling=false;
            is_mid_up=true;
@@ -62,19 +61,18 @@ low_seller::low_seller(string seller_name,int pID):seller(L_SELLER,seller_name,p
            
            print_ptrs();
              seats_full=true;
-             cout<<"jeeeeez from low\n";
+
          } 
 
        if(!s->sold){
+           low_customers_served_counter++;
            this->seats_sold_counter++;
            s->sold=true;
            this->current_seat=s;
            this->seller_state=SERVING;
            this->remaining_serving_time=c.serving_time;
        }
-       else {cout<<"ERROR IN LOW SERVE"<<endl;
-       exit(0);
-       }
+
                pthread_mutex_unlock(mutex_p);
 
                return 0;

@@ -162,5 +162,4 @@ string seller::create_ID_for_seat(){
             pthread_cond_signal(&time_cond);} //WAKE UP MAIN TO INCREMENT TIME
 
     }
-//     cout<<"yl3n den omk\n";
 }
