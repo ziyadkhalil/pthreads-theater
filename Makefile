@@ -3,6 +3,7 @@ build: ./build/main.o ./build/seat.o ./build/seller.o ./build/time.o ./build/low
 
 
 ./build/main.o: ./src/main.cpp
+	@mkdir -p ./build
 	g++ -c ./src/main.cpp -o ./build/main.o
 
 ./build/seller.o: ./src/sellers_package/seller.cpp ./src/sellers_package/seller.h
@@ -28,8 +29,5 @@ clean:
 
 run:
 	./output	
-
-play:
-	echo zebbi	
 
 

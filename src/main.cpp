@@ -38,20 +38,10 @@ bool are_all_sellers_ready_to_start(){
     return false;
 }
 int main(int argc,char** argv) {
-    switch(argc){
-        case 1:
-            NUMBER_OF_CUSTOMERS_PER_QUEUE = 10;
-            break;
-        case 2:
-            stringstream sstream (argv[1]);
-            sstream >> NUMBER_OF_CUSTOMERS_PER_QUEUE;
-            break;
-        case 3:
-            stringstream sstream (argv[1]);
-            sstream >> NUMBER_OF_CUSTOMERS_PER_QUEUE;
-            stringstream sstream (argv[2]);
-            sstream >> MIN_BY_MIN_SIMULATION;
-    }
+        if(argc==1)
+            exit(0);
+        stringstream sstream (argv[1]);
+        sstream >> NUMBER_OF_CUSTOMERS_PER_QUEUE;
     
     for(int i =0;i<10;i++)
         for(int j =0;j<10;j++)
