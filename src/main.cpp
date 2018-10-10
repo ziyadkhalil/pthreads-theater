@@ -56,7 +56,7 @@ int main(int argc,char** argv) {
         stringstream sstream (argv[1]);
         sstream >> NUMBER_OF_CUSTOMERS_PER_QUEUE;
         if(argc==3){
-            if(argv[2]=="mbm")
+            if(string(argv[2])=="mbm")
                 MIN_BY_MIN_SIMULATION=true;
         }
 
