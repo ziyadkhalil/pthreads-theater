@@ -43,11 +43,12 @@ void print_customers_who_arrived_now(){
     for(int i = 0 ; i<10;i++){
         for(int j =0;j<NUMBER_OF_CUSTOMERS_PER_QUEUE;j++)
             if(sellers[i].cArr[j].aT==time_counter){
-                s+= sellers[i].cArr[j].name + " at " + sellers[i].name + "\n";
+                s+= sellers[i]->cArr[j].name + " at " + sellers[i]->seller_name + "\n";
                 print = true;
             }
     }
-    cout << s;  
+    if(print)
+        cout << s;  
 }
 int main(int argc,char** argv) {
         if(argc==1)

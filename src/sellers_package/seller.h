@@ -82,7 +82,7 @@ public:
     seat* current_seat = nullptr;
     seller(int s_type,string seller_name,int pID);
     queue<customer> cQ;
-    customer* cArr;
+    customer* cArr = nullptr;
     int fRanInt(int,int);
     int gen_aT();
     int gen_serving_time();
