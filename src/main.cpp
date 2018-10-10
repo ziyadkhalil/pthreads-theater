@@ -47,7 +47,7 @@ void print_customers_who_arrived_now(){
                 print = true;
             }
     }
-    cout << s;
+    cout << s;  
 }
 int main(int argc,char** argv) {
         if(argc==1)

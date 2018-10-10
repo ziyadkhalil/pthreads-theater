@@ -67,6 +67,7 @@ void seller::fill_cQ(int N){
             tmp[i].name = this->seller_name+num;
             cQ.push(tmp[i]);
         }
+        this.cArr = tmp;
     }
 
 bool seller::are_all_sellers_done(){
