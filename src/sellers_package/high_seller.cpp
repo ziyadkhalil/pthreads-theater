@@ -44,7 +44,7 @@
       
 
        if(!s->sold){
-           mid_customers_served_counter++;
+           high_customers_served_counter++;
            this->seats_sold_counter++;
            s->sold=true;
            this->current_seat=s;
