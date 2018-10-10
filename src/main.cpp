@@ -55,7 +55,8 @@ int main(int argc,char** argv) {
             exit(0);
         stringstream sstream (argv[1]);
         sstream >> NUMBER_OF_CUSTOMERS_PER_QUEUE;
-    
+    for(int i =0 ; i < 10 ;i++)
+        sellers[i]->cArr = new customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
     for(int i =0;i<10;i++)
         for(int j =0;j<10;j++)
             seat_chart[i][j].setIJ(i,j);
