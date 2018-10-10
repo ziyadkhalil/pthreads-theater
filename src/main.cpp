@@ -2,7 +2,7 @@
 #include "time_sync/time.h"
 #include <unistd.h>
 int NUMBER_OF_CUSTOMERS_PER_QUEUE=0;
-bool MIN_BY_MIN_SIMULATION = true;
+bool MIN_BY_MIN_SIMULATION = false;
 int seat::soldSeats = 0 ;
 seller* sellers[10];
 void* start_selling(void* arg){
@@ -55,6 +55,11 @@ int main(int argc,char** argv) {
             exit(0);
         stringstream sstream (argv[1]);
         sstream >> NUMBER_OF_CUSTOMERS_PER_QUEUE;
+        if(argc==3){
+            if(argv[2]=="mbm")
+                MIN_BY_MIN_SIMULATION=true;
+        }
+
 
     for(int i =0;i<10;i++)
         for(int j =0;j<10;j++)
@@ -68,19 +73,19 @@ int main(int argc,char** argv) {
         if(i<1){
         string name = "H"+to_string(i+1);
         sellers[i] = new high_seller(name,i);
-                sellers[i]->cArr = new Customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
+                sellers[i]->cArr = new customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
                 sellers[i]->fill_cQ(NUMBER_OF_CUSTOMERS_PER_QUEUE);
         }
         else if (i<4){
             string name = "M"+to_string(i);
             sellers[i] = new mid_seller(name,i);
-            sellers[i]->cArr = new Customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
+            sellers[i]->cArr = new customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
             sellers[i]->fill_cQ(NUMBER_OF_CUSTOMERS_PER_QUEUE);
         }
         else {
             string name = "L"+to_string(i-3);
             sellers[i]=new low_seller(name,i);
-            sellers[i]->cArr = new Customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
+            sellers[i]->cArr = new customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
             sellers[i]->fill_cQ(NUMBER_OF_CUSTOMERS_PER_QUEUE);
             
         }
@@ -114,8 +119,8 @@ int main(int argc,char** argv) {
         if(time_counter<10)
             current_time_string="0"+current_time_string;
         cout<<"00:"<<current_time_string<<endl;
+        print_customers_who_arrived_now();
         for(int i=0 ; i<10 ;i++){
-            print_customers_who_arrived_now();
             cout<<(sellers[i]->seller_name)<<": "<<sellers[i]->event_log[time_counter]<<endl;
             
         }
