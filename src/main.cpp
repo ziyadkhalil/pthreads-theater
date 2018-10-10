@@ -42,7 +42,7 @@ void print_customers_who_arrived_now(){
     bool print = false;
     for(int i = 0 ; i<10;i++){
         for(int j =0;j<NUMBER_OF_CUSTOMERS_PER_QUEUE;j++)
-            if(sellers[i].cArr[j].aT==time_counter){
+            if(sellers[i]->cArr[j].aT==time_counter){
                 s+= sellers[i]->cArr[j].name + " at " + sellers[i]->seller_name + "\n";
                 print = true;
             }
