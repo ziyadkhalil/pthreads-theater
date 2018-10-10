@@ -4,7 +4,7 @@
 
  seat* mSPD = &seat_chart[5][0];
  seat* mSPU = &seat_chart[4][9];
- seat** mSP = &mSPU; //POINTER TO A POINTER BECAUSE LIFE IS A BITCH  //TODO: REMIND ME TO EXPLAIN 
+ seat** mSP = &mSPU; 
  pthread_mutex_t mSPMutex;
  pthread_mutex_t* m_mutex_ptr = &mSPMutex;
  bool is_mid_up = true;
@@ -14,6 +14,8 @@
   pthread_mutex_t dbml_mutex;
   int distance_between_high_and_mid=50;
   int distance_between_mid_and_low=50;
+   int mid_customers_served_counter=0;
+
 
  
 
@@ -37,7 +39,6 @@ int mid_seller::serve(customer c)  {
                  hSPP=&mSPD;
                  mSP=&mSPD;
                  if(mSPD->sold){
-                     cout<<"jesus christ\n";
                      seats_full=true;
                  }
                  is_toggling=false;
@@ -53,7 +54,6 @@ int mid_seller::serve(customer c)  {
                  lSPP=&mSPU;
                  mSP=&mSPU;
                  if(mSPD->sold){
-                     cout<<"christ jesus\n";
                     seats_full=true;
                  }
                  is_toggling=false;
@@ -70,12 +70,12 @@ int mid_seller::serve(customer c)  {
              seats_full=true;
              print_ptrs();
              
-             cout<<"jeeeeez\n";
              } 
         toggle_counter++;
        if(toggle_counter==10&&is_toggling)
            toggle_mid_pointer();
        if(!s->sold){
+           mid_customers_served_counter++;
            this->seats_sold_counter++;
            s->sold=true;
 //           cout<<"GONNA SERVE FOR " << to_string(c.serving_time) << endl;
@@ -83,11 +83,7 @@ int mid_seller::serve(customer c)  {
             this->seller_state=SERVING;
             this->remaining_serving_time= c.serving_time;
        }
-       else{
-           
-           cout<<"WE FUCKED UP\n";
-           exit(0);
-       }
+
                pthread_mutex_unlock(mutex_p);
                return 0;
 

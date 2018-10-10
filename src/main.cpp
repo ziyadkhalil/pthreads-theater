@@ -124,6 +124,7 @@ int main(int argc,char** argv) {
             cout<<(sellers[i]->seller_name)<<": "<<sellers[i]->event_log[time_counter]<<endl;
             
         }
+        print_seats();
                 cout<<endl;
                 time_counter++;
          if(done)
@@ -137,7 +138,15 @@ int main(int argc,char** argv) {
     for(int i = 0 ; i <10 ; i++){
         pthread_join(threads[i],NULL);
     }
-        cout<<"SEATS SOLD: "<<seat::soldSeats<<endl;
- print_seats();  
- cout<<not_ready_cnt<<endl;
+
+ cout << endl;  
+ cout<<"Number of Customers Served:\n";
+ cout << "H: " << to_string(high_customers_served_counter)<<endl;
+ cout << "M: " << to_string(mid_customers_served_counter)<<endl;
+ cout << "L: " << to_string(low_customers_served_counter)<<endl;
+ cout<<"Number of Customers not Served:\n";
+ cout << "H: " << to_string((1*NUMBER_OF_CUSTOMERS_PER_QUEUE)-high_customers_served_counter)<<endl;
+ cout << "M: " << to_string(3*(NUMBER_OF_CUSTOMERS_PER_QUEUE)-mid_customers_served_counter)<<endl;
+ cout << "L: " << to_string(6*(NUMBER_OF_CUSTOMERS_PER_QUEUE)-low_customers_served_counter)<<endl;
+ 
 }

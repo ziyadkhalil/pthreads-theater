@@ -2,6 +2,7 @@
 
         seat* hSP = &seat_chart[0][0];
         seat** hSPP = &hSP;
+        int high_customers_served_counter = 0 ;
 
         bool first_time_hm=true;
 
@@ -26,7 +27,6 @@
            mSP=&mSPD;
            if(mSPD->sold){
                seats_full=true;
-               cout <<" chris\n";
                 }
            is_toggling=false;
            is_mid_up=false;
@@ -39,21 +39,19 @@
          if((!first_time_hm)&&(!first_time_ml)){
            print_ptrs();
              seats_full=true;
-             cout<<"jeeeeez from high\n";
          } 
        
       
 
        if(!s->sold){
+           mid_customers_served_counter++;
            this->seats_sold_counter++;
            s->sold=true;
            this->current_seat=s;
            this->seller_state=SERVING;
            this->remaining_serving_time=c.serving_time;
        }
-       else{ cout<<"ERROR IN HIGH SERVE"<<endl;
-       exit(0);
-       }
+
               pthread_mutex_unlock(mutex_p);
 
     }

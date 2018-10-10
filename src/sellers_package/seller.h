@@ -35,6 +35,10 @@ extern seat** hSPP;
 extern bool first_time_hm;
 extern bool first_time_ml;
 extern bool seats_full;
+extern int high_customers_served_counter;
+extern int mid_customers_served_counter;
+extern int low_customers_served_counter;
+
 
 
 extern seat* mSPD;
@@ -43,6 +47,7 @@ extern seat** mSP;
 extern bool is_mid_up;
 extern bool is_toggling;
 extern int toggle_counter;
+
 
 
 extern seat* lSP;
