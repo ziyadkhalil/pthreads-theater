@@ -56,6 +56,7 @@ extern seat** lSPP;
 
 class customer{
 public:
+    bool got_served = false;
     string name;
     int aT;                                         // arrival time of a customer
     int serving_time;
@@ -80,7 +81,8 @@ public:
     int s_type;
     seat* current_seat = nullptr;
     seller(int s_type,string seller_name,int pID);
-    queue<customer> cQ;    
+    queue<customer> cQ;
+    customer cArr[] = new customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];    
     int fRanInt(int,int);
     int gen_aT();
     int gen_serving_time();

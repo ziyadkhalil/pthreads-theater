@@ -52,7 +52,6 @@ void seller::fill_cQ(int N){
         
         for (int i = 0; i<N; i++){
             tmp[i] = customer();
-            tmp[i].name = this->seller_name+"_"+to_string(i);
             tmp[i].set_aT(gen_aT());
             tmp[i].serving_time=gen_serving_time();
         }
@@ -62,6 +61,10 @@ void seller::fill_cQ(int N){
              { return p1.aT < p2.aT; } );
         
         for (int i = 0; i<N; i++){
+            string num  = to_string(i+1);
+            if(i+1<10)
+                num="0"+num;
+            tmp[i].name = this->seller_name+num;
             cQ.push(tmp[i]);
         }
     }

@@ -4,7 +4,7 @@
 int NUMBER_OF_CUSTOMERS_PER_QUEUE=0;
 bool MIN_BY_MIN_SIMULATION = true;
 int seat::soldSeats = 0 ;
-
+seller* sellers[10];
 void* start_selling(void* arg){
     seller* s = (seller*)arg;
     sleep(s->pID);
@@ -37,6 +37,18 @@ bool are_all_sellers_ready_to_start(){
     }
     return false;
 }
+void print_customers_who_arrived_now(){
+    string s = "Customers arrived: \n";
+    bool print = false;
+    for(int i = 0 ; i<10;i++){
+        for(int j =0;j<NUMBER_OF_CUSTOMERS_PER_QUEUE;j++)
+            if(sellers[i].cArr[j].aT==time_counter){
+                s+= sellers[i].cArr[j].name + " at " + sellers[i].name + "\n";
+                print = true;
+            }
+    }
+    cout << s;
+}
 int main(int argc,char** argv) {
         if(argc==1)
             exit(0);
@@ -47,7 +59,6 @@ int main(int argc,char** argv) {
         for(int j =0;j<10;j++)
             seat_chart[i][j].setIJ(i,j);
     pthread_t threads [10];
-    seller* sellers[10];
     pthread_attr_t attr;
     pthread_attr_init(&attr);
     pthread_attr_setdetachstate(&attr,PTHREAD_CREATE_JOINABLE);
@@ -100,6 +111,7 @@ int main(int argc,char** argv) {
             current_time_string="0"+current_time_string;
         cout<<"00:"<<current_time_string<<endl;
         for(int i=0 ; i<10 ;i++){
+            print_customers_who_arrived_now();
             cout<<(sellers[i]->seller_name)<<": "<<sellers[i]->event_log[time_counter]<<endl;
             
         }
