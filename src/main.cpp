@@ -55,8 +55,7 @@ int main(int argc,char** argv) {
             exit(0);
         stringstream sstream (argv[1]);
         sstream >> NUMBER_OF_CUSTOMERS_PER_QUEUE;
-    for(int i =0 ; i < 10 ;i++)
-        sellers[i]->cArr = new customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
+
     for(int i =0;i<10;i++)
         for(int j =0;j<10;j++)
             seat_chart[i][j].setIJ(i,j);
@@ -69,16 +68,19 @@ int main(int argc,char** argv) {
         if(i<1){
         string name = "H"+to_string(i+1);
         sellers[i] = new high_seller(name,i);
+                sellers[i]->cArr = new Customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
                 sellers[i]->fill_cQ(NUMBER_OF_CUSTOMERS_PER_QUEUE);
         }
         else if (i<4){
             string name = "M"+to_string(i);
             sellers[i] = new mid_seller(name,i);
+            sellers[i]->cArr = new Customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
             sellers[i]->fill_cQ(NUMBER_OF_CUSTOMERS_PER_QUEUE);
         }
         else {
             string name = "L"+to_string(i-3);
             sellers[i]=new low_seller(name,i);
+            sellers[i]->cArr = new Customer[NUMBER_OF_CUSTOMERS_PER_QUEUE];
             sellers[i]->fill_cQ(NUMBER_OF_CUSTOMERS_PER_QUEUE);
             
         }
