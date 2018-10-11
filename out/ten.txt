@@ -1,0 +1,1606 @@
+H1 Starting. (Thread0)
+M1 Starting. (Thread1)
+M2 Starting. (Thread2)
+M3 Starting. (Thread3)
+L1 Starting. (Thread4)
+L2 Starting. (Thread5)
+L3 Starting. (Thread6)
+L4 Starting. (Thread7)
+L5 Starting. (Thread8)
+L6 Starting. (Thread9)
+00:00
+Customers arrived: 
+H101 at H1
+M101 at M1
+L201 at L2
+L301 at L3
+L401 at L4
+L501 at L5
+H1: Finished Serving Customer H101 and Assigned him to Seat[0][0].
+M1: Started Serving Customer M101
+M2: Waiting for Customers...
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Started Serving Customer L201
+L3: Started Serving Customer L301
+L4: Started Serving Customer L401
+L5: Started Serving Customer L501
+L6: Waiting for Customers...
+[H101] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+
+00:01
+Customers arrived: 
+M301 at M3
+M302 at M3
+L101 at L1
+H1: Waiting for Customers...
+M1: Finished Serving Customer M101 and Assigned him to Seat[4][9].
+M2: Waiting for Customers...
+M3: Started Serving Customer M301
+L1: Started Serving Customer L101
+L2: Serving Customer L201
+L3: Serving Customer L301
+L4: Serving Customer L401
+L5: Serving Customer L501
+L6: Waiting for Customers...
+[H101] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+
+00:02
+Customers arrived: 
+H102 at H1
+M102 at M1
+L601 at L6
+H1: Started Serving Customer H102
+M1: Started Serving Customer M102
+M2: Waiting for Customers...
+M3: Serving Customer M301
+L1: Serving Customer L101
+L2: Serving Customer L201
+L3: Serving Customer L301
+L4: Serving Customer L401
+L5: Serving Customer L501
+L6: Started Serving Customer L601
+[H101] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+
+00:03
+Customers arrived: 
+L302 at L3
+H1: Finished Serving Customer H102 and Assigned him to Seat[0][1].
+M1: Serving Customer M102
+M2: Waiting for Customers...
+M3: Finished Serving Customer M301 and Assigned him to Seat[4][8].
+L1: Serving Customer L101
+L2: Serving Customer L201
+L3: Finished Serving Customer L301 and Assigned him to Seat[9][7].
+L4: Serving Customer L401
+L5: Serving Customer L501
+L6: Serving Customer L601
+[H101] [H102] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L301] [   -] [   -] 
+
+00:04
+H1: Waiting for Customers...
+M1: Finished Serving Customer M102 and Assigned him to Seat[4][7].
+M2: Waiting for Customers...
+M3: Started Serving Customer M302
+L1: Serving Customer L101
+L2: Serving Customer L201
+L3: Started Serving Customer L302
+L4: Finished Serving Customer L401 and Assigned him to Seat[9][6].
+L5: Serving Customer L501
+L6: Serving Customer L601
+[H101] [H102] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [L401] [L301] [   -] [   -] 
+
+00:05
+Customers arrived: 
+L402 at L4
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Waiting for Customers...
+M3: Finished Serving Customer M302 and Assigned him to Seat[4][6].
+L1: Serving Customer L101
+L2: Finished Serving Customer L201 and Assigned him to Seat[9][8].
+L3: Serving Customer L302
+L4: Started Serving Customer L402
+L5: Finished Serving Customer L501 and Assigned him to Seat[9][9].
+L6: Finished Serving Customer L601 and Assigned him to Seat[9][4].
+[H101] [H102] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [L601] [   -] [L401] [L301] [L201] [L501] 
+
+00:06
+Customers arrived: 
+M303 at M3
+L202 at L2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Waiting for Customers...
+M3: Started Serving Customer M303
+L1: Serving Customer L101
+L2: Started Serving Customer L202
+L3: Serving Customer L302
+L4: Serving Customer L402
+L5: Waiting for Customers...
+L6: Waiting for Customers...
+[H101] [H102] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [L601] [   -] [L401] [L301] [L201] [L501] 
+
+00:07
+Customers arrived: 
+L502 at L5
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Waiting for Customers...
+M3: Serving Customer M303
+L1: Finished Serving Customer L101 and Assigned him to Seat[9][5].
+L2: Serving Customer L202
+L3: Finished Serving Customer L302 and Assigned him to Seat[9][3].
+L4: Serving Customer L402
+L5: Started Serving Customer L502
+L6: Waiting for Customers...
+[H101] [H102] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:08
+Customers arrived: 
+M201 at M2
+L102 at L1
+L303 at L3
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M201
+M3: Finished Serving Customer M303 and Assigned him to Seat[4][5].
+L1: Started Serving Customer L102
+L2: Serving Customer L202
+L3: Started Serving Customer L303
+L4: Serving Customer L402
+L5: Serving Customer L502
+L6: Waiting for Customers...
+[H101] [H102] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:09
+Customers arrived: 
+H103 at H1
+M103 at M1
+M202 at M2
+H1: Started Serving Customer H103
+M1: Started Serving Customer M103
+M2: Serving Customer M201
+M3: Waiting for Customers...
+L1: Serving Customer L102
+L2: Finished Serving Customer L202 and Assigned him to Seat[9][1].
+L3: Serving Customer L303
+L4: Serving Customer L402
+L5: Serving Customer L502
+L6: Waiting for Customers...
+[H101] [H102] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L202] [   -] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:10
+Customers arrived: 
+L203 at L2
+H1: Finished Serving Customer H103 and Assigned him to Seat[0][2].
+M1: Serving Customer M103
+M2: Serving Customer M201
+M3: Waiting for Customers...
+L1: Serving Customer L102
+L2: Started Serving Customer L203
+L3: Serving Customer L303
+L4: Serving Customer L402
+L5: Serving Customer L502
+L6: Waiting for Customers...
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L202] [   -] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:11
+H1: Waiting for Customers...
+M1: Finished Serving Customer M103 and Assigned him to Seat[4][3].
+M2: Finished Serving Customer M201 and Assigned him to Seat[4][4].
+M3: Waiting for Customers...
+L1: Serving Customer L102
+L2: Serving Customer L203
+L3: Serving Customer L303
+L4: Finished Serving Customer L402 and Assigned him to Seat[9][2].
+L5: Finished Serving Customer L502 and Assigned him to Seat[9][0].
+L6: Waiting for Customers...
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:12
+Customers arrived: 
+M304 at M3
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M202
+M3: Started Serving Customer M304
+L1: Finished Serving Customer L102 and Assigned him to Seat[8][8].
+L2: Serving Customer L203
+L3: Finished Serving Customer L303 and Assigned him to Seat[8][9].
+L4: Waiting for Customers...
+L5: Waiting for Customers...
+L6: Waiting for Customers...
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:13
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Serving Customer M202
+M3: Serving Customer M304
+L1: Waiting for Customers...
+L2: Finished Serving Customer L203 and Assigned him to Seat[8][7].
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Waiting for Customers...
+L6: Waiting for Customers...
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:14
+Customers arrived: 
+M203 at M2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Serving Customer M202
+M3: Finished Serving Customer M304 and Assigned him to Seat[4][1].
+L1: Waiting for Customers...
+L2: Waiting for Customers...
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Waiting for Customers...
+L6: Waiting for Customers...
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M304] [   -] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:15
+Customers arrived: 
+L503 at L5
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M202 and Assigned him to Seat[4][2].
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Waiting for Customers...
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Started Serving Customer L503
+L6: Waiting for Customers...
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:16
+Customers arrived: 
+L504 at L5
+L505 at L5
+L602 at L6
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M203
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Waiting for Customers...
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Serving Customer L503
+L6: Started Serving Customer L602
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:17
+Customers arrived: 
+M204 at M2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M203 and Assigned him to Seat[4][0].
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Waiting for Customers...
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Serving Customer L503
+L6: Serving Customer L602
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:18
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M204
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Waiting for Customers...
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Serving Customer L503
+L6: Serving Customer L602
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:19
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M204 and Assigned him to Seat[5][0].
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Waiting for Customers...
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Serving Customer L503
+L6: Serving Customer L602
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:20
+Customers arrived: 
+L204 at L2
+L603 at L6
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Waiting for Customers...
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Started Serving Customer L204
+L3: Waiting for Customers...
+L4: Waiting for Customers...
+L5: Finished Serving Customer L503 and Assigned him to Seat[8][6].
+L6: Serving Customer L602
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:21
+Customers arrived: 
+M205 at M2
+L103 at L1
+L304 at L3
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M205
+M3: Waiting for Customers...
+L1: Started Serving Customer L103
+L2: Serving Customer L204
+L3: Started Serving Customer L304
+L4: Waiting for Customers...
+L5: Started Serving Customer L504
+L6: Serving Customer L602
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:22
+Customers arrived: 
+M206 at M2
+M305 at M3
+L104 at L1
+L305 at L3
+L306 at L3
+L506 at L5
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M205 and Assigned him to Seat[5][1].
+M3: Started Serving Customer M305
+L1: Serving Customer L103
+L2: Serving Customer L204
+L3: Serving Customer L304
+L4: Waiting for Customers...
+L5: Serving Customer L504
+L6: Finished Serving Customer L602 and Assigned him to Seat[8][5].
+[H101] [H102] [H103] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:23
+Customers arrived: 
+H104 at H1
+M104 at M1
+H1: Finished Serving Customer H104 and Assigned him to Seat[0][3].
+M1: Started Serving Customer M104
+M2: Started Serving Customer M206
+M3: Finished Serving Customer M305 and Assigned him to Seat[5][2].
+L1: Serving Customer L103
+L2: Serving Customer L204
+L3: Serving Customer L304
+L4: Waiting for Customers...
+L5: Serving Customer L504
+L6: Started Serving Customer L603
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:24
+Customers arrived: 
+M207 at M2
+M306 at M3
+H1: Waiting for Customers...
+M1: Serving Customer M104
+M2: Finished Serving Customer M206 and Assigned him to Seat[5][3].
+M3: Started Serving Customer M306
+L1: Serving Customer L103
+L2: Finished Serving Customer L204 and Assigned him to Seat[8][4].
+L3: Serving Customer L304
+L4: Waiting for Customers...
+L5: Finished Serving Customer L504 and Assigned him to Seat[8][1].
+L6: Serving Customer L603
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L504] [   -] [   -] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:25
+Customers arrived: 
+M208 at M2
+L403 at L4
+L604 at L6
+H1: Waiting for Customers...
+M1: Finished Serving Customer M104 and Assigned him to Seat[5][4].
+M2: Started Serving Customer M207
+M3: Serving Customer M306
+L1: Finished Serving Customer L103 and Assigned him to Seat[8][3].
+L2: Waiting for Customers...
+L3: Finished Serving Customer L304 and Assigned him to Seat[8][2].
+L4: Started Serving Customer L403
+L5: Started Serving Customer L505
+L6: Serving Customer L603
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:26
+Customers arrived: 
+L404 at L4
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M207 and Assigned him to Seat[5][6].
+M3: Finished Serving Customer M306 and Assigned him to Seat[5][5].
+L1: Started Serving Customer L104
+L2: Waiting for Customers...
+L3: Started Serving Customer L305
+L4: Serving Customer L403
+L5: Serving Customer L505
+L6: Serving Customer L603
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:27
+Customers arrived: 
+M209 at M2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M208
+M3: Waiting for Customers...
+L1: Serving Customer L104
+L2: Waiting for Customers...
+L3: Serving Customer L305
+L4: Serving Customer L403
+L5: Serving Customer L505
+L6: Serving Customer L603
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:28
+Customers arrived: 
+L205 at L2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M208 and Assigned him to Seat[5][7].
+M3: Waiting for Customers...
+L1: Serving Customer L104
+L2: Started Serving Customer L205
+L3: Serving Customer L305
+L4: Finished Serving Customer L403 and Assigned him to Seat[7][8].
+L5: Serving Customer L505
+L6: Finished Serving Customer L603 and Assigned him to Seat[8][0].
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [L403] [   -] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:29
+Customers arrived: 
+L605 at L6
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M209
+M3: Waiting for Customers...
+L1: Serving Customer L104
+L2: Serving Customer L205
+L3: Serving Customer L305
+L4: Started Serving Customer L404
+L5: Serving Customer L505
+L6: Started Serving Customer L604
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [L403] [   -] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:30
+Customers arrived: 
+M210 at M2
+L206 at L2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Serving Customer M209
+M3: Waiting for Customers...
+L1: Finished Serving Customer L104 and Assigned him to Seat[7][6].
+L2: Serving Customer L205
+L3: Serving Customer L305
+L4: Serving Customer L404
+L5: Serving Customer L505
+L6: Serving Customer L604
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [L104] [   -] [L403] [   -] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:31
+Customers arrived: 
+L405 at L4
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Serving Customer M209
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Serving Customer L205
+L3: Finished Serving Customer L305 and Assigned him to Seat[7][7].
+L4: Serving Customer L404
+L5: Finished Serving Customer L505 and Assigned him to Seat[7][9].
+L6: Serving Customer L604
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:32
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M209 and Assigned him to Seat[5][8].
+M3: Waiting for Customers...
+L1: Waiting for Customers...
+L2: Serving Customer L205
+L3: Started Serving Customer L306
+L4: Serving Customer L404
+L5: Started Serving Customer L506
+L6: Serving Customer L604
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:33
+Customers arrived: 
+M307 at M3
+L207 at L2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Started Serving Customer M210
+M3: Started Serving Customer M307
+L1: Waiting for Customers...
+L2: Finished Serving Customer L205 and Assigned him to Seat[7][5].
+L3: Serving Customer L306
+L4: Finished Serving Customer L404 and Assigned him to Seat[7][3].
+L5: Serving Customer L506
+L6: Serving Customer L604
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [L404] [   -] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:34
+Customers arrived: 
+L105 at L1
+L106 at L1
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Serving Customer M210
+M3: Serving Customer M307
+L1: Started Serving Customer L105
+L2: Started Serving Customer L206
+L3: Serving Customer L306
+L4: Started Serving Customer L405
+L5: Serving Customer L506
+L6: Serving Customer L604
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [L404] [   -] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:35
+Customers arrived: 
+L307 at L3
+L406 at L4
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Finished Serving Customer M210 and Assigned him to Seat[5][9]. Finished working, Closing Window...
+M3: Finished Serving Customer M307 and Assigned him to Seat[3][9].
+L1: Serving Customer L105
+L2: Serving Customer L206
+L3: Finished Serving Customer L306 and Assigned him to Seat[7][1].
+L4: Serving Customer L405
+L5: Serving Customer L506
+L6: Finished Serving Customer L604 and Assigned him to Seat[7][4].
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L306] [   -] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:36
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L105
+L2: Serving Customer L206
+L3: Started Serving Customer L307
+L4: Serving Customer L405
+L5: Finished Serving Customer L506 and Assigned him to Seat[7][2].
+L6: Started Serving Customer L605
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:37
+Customers arrived: 
+L606 at L6
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L105
+L2: Finished Serving Customer L206 and Assigned him to Seat[6][9].
+L3: Serving Customer L307
+L4: Serving Customer L405
+L5: Waiting for Customers...
+L6: Serving Customer L605
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [L206] 
+[   -] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:38
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L105
+L2: Started Serving Customer L207
+L3: Serving Customer L307
+L4: Serving Customer L405
+L5: Waiting for Customers...
+L6: Serving Customer L605
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [L206] 
+[   -] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:39
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Waiting for Customers...
+L1: Finished Serving Customer L105 and Assigned him to Seat[7][0].
+L2: Serving Customer L207
+L3: Serving Customer L307
+L4: Finished Serving Customer L405 and Assigned him to Seat[6][8].
+L5: Waiting for Customers...
+L6: Finished Serving Customer L605 and Assigned him to Seat[6][7].
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:40
+Customers arrived: 
+L208 at L2
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Waiting for Customers...
+L1: Started Serving Customer L106
+L2: Serving Customer L207
+L3: Serving Customer L307
+L4: Started Serving Customer L406
+L5: Waiting for Customers...
+L6: Started Serving Customer L606
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:41
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L106
+L2: Serving Customer L207
+L3: Serving Customer L307
+L4: Serving Customer L406
+L5: Waiting for Customers...
+L6: Serving Customer L606
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:42
+Customers arrived: 
+L507 at L5
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L106
+L2: Finished Serving Customer L207 and Assigned him to Seat[6][5].
+L3: Finished Serving Customer L307 and Assigned him to Seat[6][6].
+L4: Serving Customer L406
+L5: Started Serving Customer L507
+L6: Serving Customer L606
+[H101] [H102] [H103] [H104] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [   -] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:43
+Customers arrived: 
+H105 at H1
+M105 at M1
+L107 at L1
+L108 at L1
+H1: Finished Serving Customer H105 and Assigned him to Seat[0][4].
+M1: Started Serving Customer M105
+M2: Closed.
+M3: Waiting for Customers...
+L1: Finished Serving Customer L106 and Assigned him to Seat[6][4].
+L2: Started Serving Customer L208
+L3: Waiting for Customers...
+L4: Serving Customer L406
+L5: Serving Customer L507
+L6: Serving Customer L606
+[H101] [H102] [H103] [H104] [H105] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [   -] [   -] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:44
+Customers arrived: 
+L109 at L1
+H1: Waiting for Customers...
+M1: Serving Customer M105
+M2: Closed.
+M3: Waiting for Customers...
+L1: Started Serving Customer L107
+L2: Serving Customer L208
+L3: Waiting for Customers...
+L4: Finished Serving Customer L406 and Assigned him to Seat[6][2].
+L5: Serving Customer L507
+L6: Serving Customer L606
+[H101] [H102] [H103] [H104] [H105] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [L406] [   -] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:45
+Customers arrived: 
+M308 at M3
+L110 at L1
+L308 at L3
+L508 at L5
+H1: Waiting for Customers...
+M1: Finished Serving Customer M105 and Assigned him to Seat[3][8].
+M2: Closed.
+M3: Started Serving Customer M308
+L1: Serving Customer L107
+L2: Serving Customer L208
+L3: Started Serving Customer L308
+L4: Waiting for Customers...
+L5: Serving Customer L507
+L6: Serving Customer L606
+[H101] [H102] [H103] [H104] [H105] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [   -] [L406] [   -] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:46
+Customers arrived: 
+H106 at H1
+M106 at M1
+L309 at L3
+L607 at L6
+H1: Finished Serving Customer H106 and Assigned him to Seat[0][5].
+M1: Started Serving Customer M106
+M2: Closed.
+M3: Serving Customer M308
+L1: Serving Customer L107
+L2: Serving Customer L208
+L3: Serving Customer L308
+L4: Waiting for Customers...
+L5: Finished Serving Customer L507 and Assigned him to Seat[6][1].
+L6: Finished Serving Customer L606 and Assigned him to Seat[6][3].
+[H101] [H102] [H103] [H104] [H105] [H106] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:47
+H1: Waiting for Customers...
+M1: Finished Serving Customer M106 and Assigned him to Seat[3][4].
+M2: Closed.
+M3: Finished Serving Customer M308 and Assigned him to Seat[3][6].
+L1: Serving Customer L107
+L2: Serving Customer L208
+L3: Serving Customer L308
+L4: Waiting for Customers...
+L5: Started Serving Customer L508
+L6: Started Serving Customer L607
+[H101] [H102] [H103] [H104] [H105] [H106] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [M106] [   -] [M308] [   -] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[   -] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:48
+Customers arrived: 
+M309 at M3
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Started Serving Customer M309
+L1: Finished Serving Customer L107 and Assigned him to Seat[3][7].
+L2: Finished Serving Customer L208 and Assigned him to Seat[6][0].
+L3: Serving Customer L308
+L4: Waiting for Customers...
+L5: Serving Customer L508
+L6: Serving Customer L607
+[H101] [H102] [H103] [H104] [H105] [H106] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [M106] [   -] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:49
+H1: Waiting for Customers...
+M1: Waiting for Customers...
+M2: Closed.
+M3: Finished Serving Customer M309 and Assigned him to Seat[3][1].
+L1: Started Serving Customer L108
+L2: Waiting for Customers...
+L3: Finished Serving Customer L308 and Assigned him to Seat[3][5].
+L4: Waiting for Customers...
+L5: Serving Customer L508
+L6: Serving Customer L607
+[H101] [H102] [H103] [H104] [H105] [H106] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M309] [   -] [   -] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:50
+Customers arrived: 
+H107 at H1
+M107 at M1
+L407 at L4
+L608 at L6
+H1: Started Serving Customer H107
+M1: Started Serving Customer M107
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L108
+L2: Waiting for Customers...
+L3: Started Serving Customer L309
+L4: Started Serving Customer L407
+L5: Serving Customer L508
+L6: Serving Customer L607
+[H101] [H102] [H103] [H104] [H105] [H106] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M309] [   -] [   -] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:51
+Customers arrived: 
+L509 at L5
+H1: Finished Serving Customer H107 and Assigned him to Seat[0][6].
+M1: Serving Customer M107
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L108
+L2: Waiting for Customers...
+L3: Serving Customer L309
+L4: Serving Customer L407
+L5: Finished Serving Customer L508 and Assigned him to Seat[3][2].
+L6: Serving Customer L607
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M309] [L508] [   -] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:52
+Customers arrived: 
+H108 at H1
+M108 at M1
+L310 at L3
+H1: Finished Serving Customer H108 and Assigned him to Seat[0][7].
+M1: Finished Serving Customer M107 and Assigned him to Seat[2][7].
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L108
+L2: Waiting for Customers...
+L3: Serving Customer L309
+L4: Serving Customer L407
+L5: Started Serving Customer L509
+L6: Serving Customer L607
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [M107] [   -] [   -] 
+[   -] [M309] [L508] [   -] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:53
+Customers arrived: 
+H109 at H1
+M109 at M1
+H1: Started Serving Customer H109
+M1: Started Serving Customer M108
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L108
+L2: Waiting for Customers...
+L3: Serving Customer L309
+L4: Finished Serving Customer L407 and Assigned him to Seat[2][9].
+L5: Serving Customer L509
+L6: Finished Serving Customer L607 and Assigned him to Seat[3][3].
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [M107] [   -] [L407] 
+[   -] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:54
+H1: Finished Serving Customer H109 and Assigned him to Seat[0][8].
+M1: Serving Customer M108
+M2: Closed.
+M3: Waiting for Customers...
+L1: Finished Serving Customer L108 and Assigned him to Seat[3][0].
+L2: Waiting for Customers...
+L3: Serving Customer L309
+L4: Waiting for Customers...
+L5: Serving Customer L509
+L6: Started Serving Customer L608
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [M107] [   -] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:55
+Customers arrived: 
+L209 at L2
+L609 at L6
+H1: Waiting for Customers...
+M1: Finished Serving Customer M108 and Assigned him to Seat[2][5].
+M2: Closed.
+M3: Waiting for Customers...
+L1: Started Serving Customer L109
+L2: Started Serving Customer L209
+L3: Serving Customer L309
+L4: Waiting for Customers...
+L5: Serving Customer L509
+L6: Serving Customer L608
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [M108] [   -] [M107] [   -] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:56
+Customers arrived: 
+L210 at L2
+H1: Waiting for Customers...
+M1: Started Serving Customer M109
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L109
+L2: Serving Customer L209
+L3: Finished Serving Customer L309 and Assigned him to Seat[2][8].
+L4: Waiting for Customers...
+L5: Finished Serving Customer L509 and Assigned him to Seat[2][6].
+L6: Serving Customer L608
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:57
+Customers arrived: 
+H110 at H1
+M110 at M1
+L408 at L4
+L510 at L5
+H1: Started Serving Customer H110
+M1: Serving Customer M109
+M2: Closed.
+M3: Waiting for Customers...
+L1: Serving Customer L109
+L2: Serving Customer L209
+L3: Started Serving Customer L310
+L4: Started Serving Customer L408
+L5: Started Serving Customer L510
+L6: Serving Customer L608
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [   -] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [   -] [   -] [   -] [   -] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:58
+Customers arrived: 
+M310 at M3
+L409 at L4
+L610 at L6
+H1: Finished Serving Customer H110 and Assigned him to Seat[0][9]. Finished working, Closing Window...
+M1: Finished Serving Customer M109 and Assigned him to Seat[2][1].
+M2: Closed.
+M3: Started Serving Customer M310
+L1: Serving Customer L109
+L2: Serving Customer L209
+L3: Serving Customer L310
+L4: Serving Customer L408
+L5: Serving Customer L510
+L6: Finished Serving Customer L608 and Assigned him to Seat[2][4].
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [H110] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M109] [   -] [   -] [L608] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:59
+Customers arrived: 
+L410 at L4
+H1: Closed.
+M1: Started Serving Customer M110
+M2: Closed.
+M3: Serving Customer M310
+L1: Serving Customer L109
+L2: Finished Serving Customer L209 and Assigned him to Seat[2][3].
+L3: Serving Customer L310
+L4: Serving Customer L408
+L5: Serving Customer L510
+L6: Started Serving Customer L609
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [H110] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] [   -] 
+[   -] [M109] [   -] [L209] [L608] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:60
+H1: Closed.
+M1: Serving Customer M110
+M2: Closed.
+M3: Finished Serving Customer M310 and Assigned him to Seat[1][7]. Finished working, Closing Window...
+L1: Finished Serving Customer L109 and Assigned him to Seat[2][2]. Finished working, Closing Window...
+L2: Started Serving Customer L210
+L3: Serving Customer L310
+L4: Serving Customer L408
+L5: Serving Customer L510
+L6: Serving Customer L609
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [H110] 
+[   -] [   -] [   -] [   -] [   -] [   -] [   -] [M310] [   -] [   -] 
+[   -] [M109] [L109] [L209] [L608] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:61
+H1: Closed.
+M1: Finished Serving Customer M110 and Assigned him to Seat[1][6]. Finished working, Closing Window...
+M2: Closed.
+M3: Closed.
+L1: Closed.
+L2: Serving Customer L210
+L3: Finished Serving Customer L310 and Assigned him to Seat[1][9]. Finished working, Closing Window...
+L4: Serving Customer L408
+L5: Finished Serving Customer L510 and Assigned him to Seat[2][0]. Finished working, Closing Window...
+L6: Serving Customer L609
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [H110] 
+[   -] [   -] [   -] [   -] [   -] [   -] [M110] [M310] [   -] [L310] 
+[L510] [M109] [L109] [L209] [L608] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:62
+H1: Closed.
+M1: Closed.
+M2: Closed.
+M3: Closed.
+L1: Closed.
+L2: Serving Customer L210
+L3: Closed.
+L4: Serving Customer L408
+L5: Closed.
+L6: Serving Customer L609
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [H110] 
+[   -] [   -] [   -] [   -] [   -] [   -] [M110] [M310] [   -] [L310] 
+[L510] [M109] [L109] [L209] [L608] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:63
+H1: Closed.
+M1: Closed.
+M2: Closed.
+M3: Closed.
+L1: Closed.
+L2: Finished Serving Customer L210 and Assigned him to Seat[1][4]. Finished working, Closing Window...
+L3: Closed.
+L4: Finished Serving Customer L408 and Assigned him to Seat[1][8]. Finished working, Closing Window...
+L5: Closed.
+L6: Serving Customer L609
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [H110] 
+[   -] [   -] [   -] [   -] [L210] [   -] [M110] [M310] [L408] [L310] 
+[L510] [M109] [L109] [L209] [L608] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+00:64
+H1: Closed.
+M1: Closed.
+M2: Closed.
+M3: Closed.
+L1: Closed.
+L2: Closed.
+L3: Closed.
+L4: Closed.
+L5: Closed.
+L6: Finished Serving Customer L609 and Assigned him to Seat[1][5]. Finished working, Closing Window...
+[H101] [H102] [H103] [H104] [H105] [H106] [H107] [H108] [H109] [H110] 
+[   -] [   -] [   -] [   -] [L210] [L609] [M110] [M310] [L408] [L310] 
+[L510] [M109] [L109] [L209] [L608] [M108] [L509] [M107] [L309] [L407] 
+[L108] [M309] [L508] [L607] [M106] [L308] [M308] [L107] [M105] [M307] 
+[M203] [M304] [M202] [M103] [M201] [M303] [M302] [M102] [M301] [M101] 
+[M204] [M205] [M305] [M206] [M104] [M306] [M207] [M208] [M209] [M210] 
+[L208] [L507] [L406] [L606] [L106] [L207] [L307] [L605] [L405] [L206] 
+[L105] [L306] [L506] [L404] [L604] [L205] [L104] [L305] [L403] [L505] 
+[L603] [L504] [L304] [L103] [L204] [L602] [L503] [L203] [L102] [L303] 
+[L502] [L202] [L402] [L302] [L601] [L101] [L401] [L301] [L201] [L501] 
+
+H1 Exiting. (Thread0)
+M1 Exiting. (Thread1)
+M2 Exiting. (Thread2)
+M3 Exiting. (Thread3)
+L1 Exiting. (Thread4)
+L2 Exiting. (Thread5)
+L3 Exiting. (Thread6)
+L4 Exiting. (Thread7)
+L5 Exiting. (Thread8)
+L6 Exiting. (Thread9)
+
+Number of Customers Served:
+H: 10
+M: 30
+L: 56
+Number of Customers not Served:
+H: 0
+M: 0
+L: 4

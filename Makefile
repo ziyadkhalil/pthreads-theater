@@ -1,5 +1,5 @@
 build: ./build/main.o ./build/seat.o ./build/seller.o ./build/time.o ./build/low_seller.o ./build/mid_seller.o ./build/high_seller.o
-	@g++ -pthread -Wall ./build/main.o ./build/seller.o ./build/time.o ./build/low_seller.o ./build/mid_seller.o ./build/high_seller.o  ./build/seat.o -o output 
+	@g++ -pthread -Wall ./build/main.o ./build/seller.o ./build/time.o ./build/low_seller.o ./build/mid_seller.o ./build/high_seller.o  ./build/seat.o -o pthreads-theater 
 
 
 ./build/main.o: ./src/main.cpp
