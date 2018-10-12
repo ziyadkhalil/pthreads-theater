@@ -1,12 +1,12 @@
 # pthreads-theater
 a project on pthreads and synchronization
-###To Compile:
+### To Compile:
 1 - Go to root.\
 2 - use the Makefile in terminator. 
 ```aidl
 make build
 ```
-###To Run: 
+### To Run: 
 ```aidl
 ./pthreads-theater N
 ```
